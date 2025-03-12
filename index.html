@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: cursive;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+<body style="background-color: rgb(177, 166, 170);">
+    <nav class="bg-[bisque] border-b border-gray-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-gray-900">ELEVATE Décor</a>
+            <button id="menu-btn" class="block md:hidden text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-900 text-sm">
+                <li><a href="#" class="hover:text-gray-600">HOME</a></li>
+                <li><a href="#" class="hover:text-gray-600">ABOUT</a></li>
+                <li><a href="#" class="hover:text-gray-600">CELEBRATIONS</a></li>
+                <li><a href="#" class="hover:text-gray-600">BALLOONS</a></li>
+                <li><a href="#" class="hover:text-gray-600">BUSINESS EVENTS</a></li>
+                <li><a href="#" class="hover:text-gray-600">PORTFOLIO</a></li>
+                <li><a href="#" class="hover:text-gray-600">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#fdf8f5] py-2 text-center">
+            <a href="#" class="block py-2 text-gray-900">HOME</a>
+            <a href="#" class="block py-2 text-gray-900">ABOUT</a>
+            <a href="#" class="block py-2 text-gray-900">CELEBRATIONS</a>
+            <a href="#" class="block py-2 text-gray-900">BALLOONS</a>
+            <a href="#" class="block py-2 text-gray-900">BUSINESS EVENTS</a>
+            <a href="#" class="block py-2 text-gray-900">PORTFOLIO</a>
+            <a href="#" class="block py-2 text-gray-900">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="relative w-full h-[80vh] bg-cover bg-center" style="background-image: url('images/hero-img.jpeg');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
+            <!-- <h1 class="text-4xl md:text-6xl font-serif font-bold">EVENT DESIGN AND STYLING BOUTIQUE</h1>
+            <p class="mt-4 text-lg md:text-2xl">SERVING THE METRO DC AREA</p> -->
+        </div>
+    </section>
+
+
+
+    <section class="bg-[#fdf8f5] py-10 text-center">
+        <h2 class="text-xl md:text-2xl font-serif text-gray-900">EVENT DESIGN AND STYLING BOUTIQUE</h2>
+        <h2 class="text-xl md:text-2xl font-serif text-gray-900">TRANSFORMING SPACE, CREATING MEMORIES         </h2>
+
+        <p class="mt-2 text-lg text-gray-700">SERVING THE JAIPUR,RAJASTHAN</p>
+    </section>
+
+
+
+
+    <section class="bg-[#fdf8f5] py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <img src="images/WhatsApp Image 2025-03-11 at 10.12.21 AM (1).jpeg" alt="Event Setup" class="rounded-lg shadow-lg w-full">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-900">Welcome to Elevate Décor</h2>
+                <p class="mt-4 text-lg text-gray-700">We specialize in crafting unforgettable experiences through stunning event decorations and design. Whether it's a wedding, birthday, corporate event, or special celebration, we bring elegance and creativity to life.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="bg-white py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="flex flex-col items-center md:items-start">
+                <p class="text-gray-700 font-serif text-sm tracking-widest  md:rotate-0 " style="font-size:xx-large;">Services:</p>
+            </div>
+            <div class="space-y-4 text-center md:text-left">
+                <!-- <p class="text-gray-700 font-serif text-sm tracking-widest rotate-90 md:rotate-0 ">Services:</p> -->
+                <p class="text-lg text-gray-900 font-serif flex items-center justify-center md:justify-start">Luxury Event Styling <span class="ml-2">✔</span></p>
+                <p class="text-lg text-gray-900 font-serif flex items-center justify-center md:justify-start">Balloons and Floral Decor<span class="ml-2">✔</span></p>
+                <p class="text-lg text-gray-900 font-serif flex items-center justify-center md:justify-start">Theme-Based Setup<span class="ml-2">✔</span></p>
+                <p class="text-lg text-gray-900 font-serif flex items-center justify-center md:justify-start">Customized Props and Accessories<span class="ml-2">✔</span></p>
+            </div>
+            <div>
+                <img src="images/WhatsApp Image 2025-03-11 at 10.12.19 AM (1).jpeg" alt="Decor Image" class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-center text-gray-600 uppercase tracking-wide text-sm">Choose Your</h2>
+        <h1 class="text-center text-4xl font-light text-gray-900 mb-8">Experience</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/WhatsApp Image 2025-03-11 at 5.40.27 PM.jpeg" alt="Celebrations" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <span class="text-xl font-semibold text-gray-900">Celebrations</span>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/WhatsApp Image 2025-03-11 at 5.40.28 PM (1).jpeg" alt="Balloons" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <span class="text-xl font-semibold text-gray-900">Balloons</span>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/WhatsApp Image 2025-03-11 at 5.40.28 PM (2).jpeg" alt="Business Events" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <span class="text-xl font-semibold text-gray-900">Business Events</span>
+                </div>
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                <img src="images/WhatsApp Image 2025-03-11 at 5.40.29 PM (1).jpeg" alt="Business Events" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-white bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <span class="text-xl font-semibold text-gray-900">Business Events</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('images/hero-img.jpeg');" >
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Left Section -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-semibold italic text-gray-800" style="font-family: cursive; font-weight:bolder; margin-top: 100px;">
+                        Kind Words
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-700" style="font-family: cursive; font-weight:bolder; color:rgb(53, 0, 75); font-size:larger; margin-top: 50px;">
+                        Thanks so much Elevate Décor! It was better than I even imagined!! 
+                        Can’t wait to use your service for future events.
+                    </p>
+                    <p class="mt-6 font-semibold text-gray-900" style="font-size: xx-large; font-family: cursive;">Fara Khan...</p>
+                </div>
+                
+                <!-- Right Section -->
+                <div class="mt-8 md:mt-0 md:w-1/3 relative">
+                    <img class="w-full rounded-lg shadow-lg" src="images/WhatsApp Image 2025-03-11 at 5.40.30 PM (1).jpeg" alt="Cake Image">
+                    <div class="absolute -bottom-10 left-10 w-40">
+                        <img class="rounded-lg shadow-md" src="images/WhatsApp Image 2025-03-11 at 10.12.21 AM (1).jpeg" alt="Decor">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-400 pb-8">
+            <!-- Left Menu -->
+            <div class="text-center md:text-left space-y-2">
+                <ul class="text-gray-700 space-y-1">
+                    <li class="hover:underline"><a href="#">HOME</a></li>
+                    <li class="hover:underline"><a href="#">ABOUT</a></li>
+                    <li class="hover:underline"><a href="#">CELEBRATIONS</a></li>
+                    <li class="hover:underline"><a href="#">BALLOONS</a></li>
+                    <li class="hover:underline"><a href="#">BUSINESS EVENTS</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Logo and Info -->
+            <div class="flex flex-col items-center md:border-l md:border-r border-gray-400 px-6">
+                <h2 class="text-3xl font-semibold tracking-widest">ELEVATE <span class="italic">Décor</span></h2>
+                <p class="mt-2 text-gray-700 text-sm text-center">
+                    EVENT DESIGN AND STYLING <br>
+                    
+                </p>
+            </div>
+
+            <!-- Right Social Media -->
+            <div class="text-center md:text-right space-y-2">
+                <p class="text-gray-700">FOLLOW US ON</p>
+                <h2 class="text-2xl font-serif tracking-wide">INSTAGRAM</h2>
+                <p class="text-gray-600">@ELEVATE_DECOR</p>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-center text-sm mt-6">
+            <p class="px-4 py-2 border border-gray-500">Copyright © elevate__decor_/</p>
+            <p class="px-4 py-2 border border-gray-500">Website by Gillian Sarah</p>
+            <p class="px-4 py-2 border border-gray-500">Branding by Lovendear</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="mt-8 space-x-6">
+            <a href="https://www.instagram.com/elevate__decor_/" target="_blank" class="text-2xl hover:text-yellow-500 transition duration-300 animate__animated animate__fadeInUp animate__delay-6s">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/7733830598" target="_blank" class="text-2xl hover:text-yellow-500 transition duration-300 animate__animated animate__fadeInUp animate__delay-7s">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="text-2xl hover:text-yellow-500 transition duration-300 animate__animated animate__fadeInUp animate__delay-4s">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-2xl hover:text-yellow-500 transition duration-300 animate__animated animate__fadeInUp animate__delay-5s">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
